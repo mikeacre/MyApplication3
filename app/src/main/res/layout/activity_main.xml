@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mikeacre.myapplication.MainActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideOverlay"
+    android:fillViewport="true">
+<RelativeLayout
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
-    tools:context="com.example.mikeacre.myapplication.MainActivity">
-
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="300dp"
@@ -95,7 +100,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:layout_above="@id/rsvp"
+        android:layout_above="@+id/rsvp"
         android:text="Call Us! 1-973-750-1820"
         android:textSize="24sp"/>
     <Button
@@ -103,7 +108,7 @@
         android:layout_height="wrap_content"
         android:text="RSVP!"
         android:id="@+id/rsvp"
-        android:layout_above="@id/startnav"/>
+        android:layout_above="@+id/startnav"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -112,3 +117,4 @@
         android:id="@+id/startnav"/>
 
 </RelativeLayout>
+</ScrollView>
